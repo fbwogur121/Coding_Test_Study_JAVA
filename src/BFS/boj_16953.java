@@ -25,16 +25,11 @@ public class boj_16953 {
         while (!queue.isEmpty()){
             int size = queue.size();
             for (int i = 0; i < size; i++) {
-                long tmp = queue.poll();
-                if(tmp == b)
-                    return count+1;
-                if(tmp*2 <= b)
-                    queue.add(tmp*2);
-                if(tmp*10 + 1 <= b)
-                    queue.add(tmp*10+1);
+
+
             }
-            count++;
         }
+
         return -1;
     }
 }
